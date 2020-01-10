@@ -10,10 +10,8 @@ use Facebook\WebDriver\WebDriverKeys;
 use Facebook\WebDriver\WebDriverSelect;
 use Facebook\WebDriver\Exception\NoSuchElementException;
 
-
-
 class fdFunctions extends TestCase{
-  static protected $fd_url              = 'http://demo-dev.fusiondirectory.org/fusiondirectory/';
+  static protected $fd_url = 'http://demo-dev.fusiondirectory.org/fusiondirectory/';
   protected $driver;
 
 
@@ -26,9 +24,7 @@ protected function setUp () : void
   $this->driver = RemoteWebDriver::create($host, $capabilities, 5000);
 }
 
-
   protected function url ($endpoint)
-
   {
 
     // Remove last / in self::$fd_url if needed
